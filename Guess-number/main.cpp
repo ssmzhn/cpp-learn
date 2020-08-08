@@ -3,21 +3,14 @@ using namespace std;
 
 int main()
 {
-	int guess,number;
-	number = 4;
+	int guess;
 	cout << "Guess a number :";
 	cin >> guess;
-	if (guess == 4)
-	{
-		cout << "Oh Yeah!You're right!";
-	}
-	else if (guess < 4)
-	{
-		cout << "Guess number is too SMALL";
-	}
-	else if (guess > 4)
-	{
+	if (guess > 4)
 		cout << "Guess number is too BIG";
-	}
+	else if (guess < 4)
+		cout << "Guess number is too SMALL";
+	else
+		cout << "Oh Yeah!You're right!";
 	return 0;
 }
