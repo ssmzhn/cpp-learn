@@ -17,7 +17,7 @@ int main()
 			cout << "See you later" << endl;
 			exit(0); // 0 for normal exit code
 		}
-		cout << endl << txt; // if not the "q", do a repeater and jump in the next loop
+		cout << txt << endl; // if not the "q", do a repeater and jump in the next loop
 	}
 	return 0;
 }
