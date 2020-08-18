@@ -1,1 +1,5 @@
 main
+*.o
+*.out
+*.exe
+
