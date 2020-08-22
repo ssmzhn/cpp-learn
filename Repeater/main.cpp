@@ -3,21 +3,24 @@ using namespace std;// dont need std::cout again~
 
 int main()
 {
-	string txt; // a string type variable for save user type things
-	
-	// the main loop
-	while (true)
+	string text; // a string type variable for save user type things
+	int number , i; // a int type variable for save user type number of run times and a temp vaule
+	number = 1; // run time vaule
+	i = 1; //
+	// get text
+	cout << "Input something pls (q for exit): ";
+	cin >> text;
+	// if user want exit the program, then do it
+	if (text == "q")
 	{
-		// get text
-		cout << "Input something pls (q for exit): ";
-		cin >> txt;
-		// if user want exit the prog, then do it
-		if (txt == "q")
-		{
-			cout << "See you later" << endl;
-			exit(0); // 0 for normal exit code
-		}
-		cout << txt << endl; // if not the "q", do a repeater and jump in the next loop
+		cout << "See you later" << endl;
+		exit(0); // 0 for normal exit code
+	}
+	cout << "Input the number of run times: ";
+	cin >> number;
+	for ( i=1 ; i < number ; i++ )
+	{
+		cout << text << endl; // if not the "q", do a repeater and jump in the next loop
 	}
 	return 0;
 }
