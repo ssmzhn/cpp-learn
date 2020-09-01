@@ -1,9 +1,13 @@
-#include <iostream>
-using namespace std;
+#include <iostream> //cout need
+using namespace std; //don't need std::cout again
 
 int main()
 {
-	for (int i = 1;;)
-		cout << i++ << endl;
-	return 0;
+	int i; //int a number
+	for (i=1;;) //make i = 1 before loop
+	{
+		cout << i << endl; //print i's vaule on screen
+		i++; //add 1 for i after print
+	}
+	return 0; //exit the program normal
 }
