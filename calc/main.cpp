@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void san();
@@ -62,7 +63,26 @@ void san()
 void si()
 {
 	int a,b,c,d,s,c,input;
-	cout << "计算: 1: 面积"
+	cout << "计算: 1: 面积;2: 周长" << endl << "输入序号选择: "
+	cin >> input;
+	switch (input)
+	{
+	case 1:
+		cout << "输入长和宽的长度: ";
+		cin >> a >> b;
+		s = a*b;
+		cout << "答案为:" << s << endl;
+		break;
+	case 2:
+		cout << "输入长和宽的长度: ";
+		cin >> a >> b;
+		c = (a+b)*2;
+		cout << "答案为:" << c << endl;
+		break;
+	default:
+		cout << "输入错误！";
+		break;
+	}
 }
 
 void circle()
@@ -82,5 +102,9 @@ void yuanzhu()
 
 void gougu()
 {
-
+	int a,b,c;
+	cout << "输入两个直角边的长度: ";
+	cin >> a >> b;
+	c = a*a+b*b;
+	cout << "答案为:" << sqrt(c) << endl;
 }
