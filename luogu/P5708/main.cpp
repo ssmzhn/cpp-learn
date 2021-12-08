@@ -1,13 +1,14 @@
-#include <iostream>
-#include <cmath>
-#include <iomanip>
+#include<iostream>
+#include<iomanip>
+#include<math.h>
 
 int main()
 {
-  float a, b, c, p, s;
-  std::cin >> a >> b >> c;
-  p = (a+b+c) / 2;
-  s = sqrt(p*(p-a)*(p-b)*(p-c);
-  std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(1) << s;
-  return 0;
+	double a, b, c;
+	std::cin >> a >> b >> c;
+	double p = 0.5*(a+b+c);
+	double s ;
+	s = sqrt(p*(p-a)*(p-b)*(p-c));
+	std::cout << std::fixed << std::setprecision(1) << s;
+	return 0;
 }
