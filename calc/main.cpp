@@ -17,17 +17,17 @@ int main()
 	switch(sel)
 	{
 		case 1:
-			san();
+			san();break;//case分支后要加break
 		case 2:
-			si();
+			si();break;
 		case 3:
-			circle();
+			circle();break;
 		case 4:
-			cube();
+			cube();break;
 		case 5:
-			yuanzhu();
+			yuanzhu();break;
 		case 6:
-			gougu();
+			gougu();break;
 		default:
 			cout << "nmsl";
 			break;
@@ -37,21 +37,21 @@ int main()
 
 void san()
 {
-	int a,b,c,s,c,input;
+	int a,b,c,s,input;
 	cout << "计算: 1: 面积;2: 周长" << endl << "输入序号选择: ";
 	cin >> input;
 	switch (input)
 	{
 	case 1:
-		cout << "输入两个边的长度: ";
+		cout << "输入底和高的长度: ";//底和高，不是两条边
 		cin >> a >> b;
 		s = a*b/2;
 		cout << "答案为:" << s << endl;
 		break;
 	case 2:
-		cout << "输入三个边的长度: ";
+		cout << "输入三条边的长度: ";
 		cin >> a >> b >> c;
-		c = a+b+c;
+		c = a+b+c;//此处最好不重复用 c
 		cout << "答案为:" << c << endl;
 		break;
 	default:
@@ -62,7 +62,7 @@ void san()
 
 void si()
 {
-	int a,b,c,d,s,c,input;
+	int a,b,c,d,s,input;
 	cout << "计算: 1: 面积;2: 周长" << endl << "输入序号选择: "
 	cin >> input;
 	switch (input)
